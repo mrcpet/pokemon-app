@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Application</title>
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <script src="assets/script/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="assets/img/poke-logo.png" alt="poke-logo" />
+    </header>
+    <main>
+      <!-- <img src="assets/img/effects/splash.svg" alt="" /> -->
+      <section id="controls">
+        <div id="addPokemonControls">
+          <label for="pokedexDropDown">Pick pokémons</label>
+          <select name="pokedex" id="pokedexDropDown">
+            <option value="select" disabled selected>Select</option>
+          </select>
+          <button id="showPokemonBtn" class="pokeball-button">Add</button>
+        </div>
+        <div id="combat-controls">
+          <button id="compareBtn">Compare</button>
+          <button id="startBattleBtn">Start Battle</button>
+          <button id="resetBtn">Reset Stage</button>
+        </div>
+      </section>
+      <section class="stage">
+        <div class="pokemon-wrapper">
+          <h2>Pokémon 1</h2>
+          <article class="pokemon-container"></article>
+        </div>
+        <div class="combat-log-wrapper">
+          <h2>Combat Log</h2>
+          <section>
+            <p id="compareMsg"></p>
+          </section>
+          <section>
+            <article id="combatLog"></article>
+          </section>
+        </div>
+        <div class="pokemon-wrapper">
+          <h2>Pokémon 2</h2>
+          <article class="pokemon-container"></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

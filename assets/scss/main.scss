@@ -1,0 +1,209 @@
+@import "partials/colors";
+@import "partials/types";
+html {
+  background-image: linear-gradient(to top, #f6e49d, #f4d350);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  body {
+    font-family: monospace;
+    letter-spacing: 2px;
+    input,
+    button {
+      font-family: "Orbitron", sans-serif;
+      font-size: 1.25rem;
+      letter-spacing: 2px;
+    }
+    button {
+      background-color: #f6f6f6;
+      border: 2px solid #333;
+      color: #333;
+      padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    button:hover {
+      background-color: #ffd700;
+      color: #333;
+    }
+    button:active {
+      background-color: #c3a603;
+      color: #333;
+    }
+    h1,
+    h2,
+    h3 {
+      letter-spacing: 2px;
+      font-family: "Bangers", system-ui;
+    }
+
+    h2,
+    h3 {
+      font-weight: 200;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      section {
+        display: flex;
+      }
+
+      section#controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        label {
+          font-size: 1.5rem;
+        }
+      }
+
+      section.stage {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        .pokemon-wrapper,
+        .combat-log-wrapper {
+          min-width: 20rem;
+          h2 {
+            text-align: center;
+          }
+
+          p {
+            max-width: 20rem;
+            font-size: 1.25rem;
+            text-align: center;
+          }
+          p.countdown {
+            min-width: 20rem;
+            color: red;
+            font-size: 8rem;
+            font-family: "Bangers", system-ui;
+          }
+        }
+      }
+
+      .pokemon-card {
+        font-family: "Orbitron", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 20rem;
+        gap: 1rem;
+        padding: 0.5rem;
+        position: relative;
+        .info-element {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          width: 100%;
+
+          .info-wrapper-1,
+          .info-wrapper-2 {
+            width: 100%;
+            text-align: center;
+          }
+
+          .info-wrapper-2 {
+            display: flex;
+            justify-content: space-evenly;
+          }
+        }
+        p,
+        h2 {
+          margin: 0;
+        }
+        img {
+          width: 10rem;
+        }
+        .explosion-one {
+          display: none;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+        }
+        .explosion-two {
+          display: none;
+          top: 60px;
+          left: 20px;
+          position: absolute;
+        }
+        .stats {
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            text-align: center;
+          }
+
+          div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 4rem;
+          }
+        }
+        button {
+          font-size: 1rem;
+        }
+        .higher {
+          color: green;
+          font-weight: bold;
+        }
+        progress {
+          width: 12rem;
+          height: 2.25rem;
+          appearance: none;
+
+          &::-webkit-progress-bar {
+            background-color: #eee;
+          }
+
+          &::-webkit-progress-value {
+            background-color: #00c853;
+          }
+
+          &::-moz-progress-bar {
+            background-color: #00c853;
+          }
+        }
+      }
+    }
+  }
+}
+
+// slide in for battle mode
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 1.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1.5s ease-in-out forwards;
+}

@@ -1,0 +1,201 @@
+@mixin setColor($border-color, $background-color) {
+  border: 4px solid $border-color;
+  background-color: $background-color;
+}
+
+.normal {
+  @include setColor($normal-color, $normal-accent-color);
+}
+
+.fire {
+  @include setColor($fire-color, $fire-accent-color);
+}
+
+.water {
+  @include setColor($water-color, $water-accent-color);
+}
+
+.electric {
+  @include setColor($electric-color, $electric-accent-color);
+}
+
+.grass {
+  @include setColor($grass-color, $grass-accent-color);
+}
+
+.ice {
+  @include setColor($ice-color, $ice-accent-color);
+}
+
+.fighting {
+  @include setColor($fighting-color, $fighting-accent-color);
+}
+
+.poison {
+  @include setColor($poison-color, $poison-accent-color);
+}
+
+.ground {
+  @include setColor($ground-color, $ground-accent-color);
+}
+
+.flying {
+  @include setColor($flying-color, $flying-accent-color);
+}
+
+.psychic {
+  @include setColor($psychic-color, $psychic-accent-color);
+}
+
+.bug {
+  @include setColor($bug-color, $bug-accent-color);
+}
+
+.rock {
+  @include setColor($rock-color, $rock-accent-color);
+}
+
+.ghost {
+  @include setColor($ghost-color, $ghost-accent-color);
+}
+
+.dragon {
+  @include setColor($dragon-color, $dragon-accent-color);
+}
+
+.dark {
+  @include setColor($dark-color, $dark-accent-color);
+}
+
+.steel {
+  @include setColor($steel-color, $steel-accent-color);
+}
+
+.fairy {
+  @include setColor($fairy-color, $fairy-accent-color);
+}
+.normal-secondary {
+  background-image: url("../img/effects/splash-normal.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fire-secondary {
+  background-image: url("../img/effects/splash-fire.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.water-secondary {
+  background-image: url("../img/effects/splash-water.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.electric-secondary {
+  background-image: url("../img/effects/splash-electric.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.grass-secondary {
+  background-image: url("../img/effects/splash-grass.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ice-secondary {
+  background-image: url("../img/effects/splash-ice.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fighting-secondary {
+  background-image: url("../img/effects/splash-fighting.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.poison-secondary {
+  background-image: url("../img/effects/splash-poison.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ground-secondary {
+  background-image: url("../img/effects/splash-ground.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.flying-secondary {
+  background-image: url("../img/effects/splash-flying.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.psychic-secondary {
+  background-image: url("../img/effects/splash-psychic.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.bug-secondary {
+  background-image: url("../img/effects/splash-bug.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.rock-secondary {
+  background-image: url("../img/effects/splash-rock.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ghost-secondary {
+  background-image: url("../img/effects/splash-ghost.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.dragon-secondary {
+  background-image: url("../img/effects/splash-dragon.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.dark-secondary {
+  background-image: url("../img/effects/splash-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.steel-secondary {
+  background-image: url("../img/effects/splash-steel.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fairy-secondary {
+  background-image: url("../img/effects/splash-fairy.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}

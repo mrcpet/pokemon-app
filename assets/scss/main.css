@@ -1,0 +1,410 @@
+.normal {
+  border: 4px solid #a8a878;
+  background-color: #b4b290;
+}
+
+.fire {
+  border: 4px solid #f08030;
+  background-color: #f2925a;
+}
+
+.water {
+  border: 4px solid #6890f0;
+  background-color: #80a6f0;
+}
+
+.electric {
+  border: 4px solid #f8d030;
+  background-color: #f8d95a;
+}
+
+.grass {
+  border: 4px solid #78c850;
+  background-color: #8ccc6a;
+}
+
+.ice {
+  border: 4px solid #98d8d8;
+  background-color: #a8e0e0;
+}
+
+.fighting {
+  border: 4px solid #c03028;
+  background-color: #d2584a;
+}
+
+.poison {
+  border: 4px solid #a040a0;
+  background-color: #b25cb2;
+}
+
+.ground {
+  border: 4px solid #e0c068;
+  background-color: #e8d084;
+}
+
+.flying {
+  border: 4px solid #a890f0;
+  background-color: #b8a6f8;
+}
+
+.psychic {
+  border: 4px solid #f85888;
+  background-color: #f87098;
+}
+
+.bug {
+  border: 4px solid #a8b820;
+  background-color: #b4c038;
+}
+
+.rock {
+  border: 4px solid #b8a038;
+  background-color: #c4b05a;
+}
+
+.ghost {
+  border: 4px solid #705898;
+  background-color: #7c6cac;
+}
+
+.dragon {
+  border: 4px solid #7038f8;
+  background-color: #7c4df8;
+}
+
+.dark {
+  border: 4px solid #705848;
+  background-color: #7c685a;
+}
+
+.steel {
+  border: 4px solid #b8b8d0;
+  background-color: #c4c4e0;
+}
+
+.fairy {
+  border: 4px solid #ee99ac;
+  background-color: #f0aebd;
+}
+
+.normal-secondary {
+  background-image: url("../img/effects/splash-normal.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fire-secondary {
+  background-image: url("../img/effects/splash-fire.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.water-secondary {
+  background-image: url("../img/effects/splash-water.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.electric-secondary {
+  background-image: url("../img/effects/splash-electric.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.grass-secondary {
+  background-image: url("../img/effects/splash-grass.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ice-secondary {
+  background-image: url("../img/effects/splash-ice.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fighting-secondary {
+  background-image: url("../img/effects/splash-fighting.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.poison-secondary {
+  background-image: url("../img/effects/splash-poison.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ground-secondary {
+  background-image: url("../img/effects/splash-ground.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.flying-secondary {
+  background-image: url("../img/effects/splash-flying.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.psychic-secondary {
+  background-image: url("../img/effects/splash-psychic.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.bug-secondary {
+  background-image: url("../img/effects/splash-bug.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.rock-secondary {
+  background-image: url("../img/effects/splash-rock.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.ghost-secondary {
+  background-image: url("../img/effects/splash-ghost.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.dragon-secondary {
+  background-image: url("../img/effects/splash-dragon.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.dark-secondary {
+  background-image: url("../img/effects/splash-dark.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.steel-secondary {
+  background-image: url("../img/effects/splash-steel.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+.fairy-secondary {
+  background-image: url("../img/effects/splash-fairy.svg");
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  background-position: top right;
+}
+
+html {
+  background-image: linear-gradient(to top, #f6e49d, #f4d350);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+html body {
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+html body input,
+html body button {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+html body button {
+  background-color: #f6f6f6;
+  border: 2px solid #333;
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+html body button:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+html body button:active {
+  background-color: #c3a603;
+  color: #333;
+}
+html body h1,
+html body h2,
+html body h3 {
+  letter-spacing: 2px;
+  font-family: "Bangers", system-ui;
+}
+html body h2,
+html body h3 {
+  font-weight: 200;
+}
+html body header {
+  display: flex;
+  justify-content: center;
+}
+html body main section {
+  display: flex;
+}
+html body main section#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+html body main section#controls label {
+  font-size: 1.5rem;
+}
+html body main section.stage {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+html body main section.stage .pokemon-wrapper,
+html body main section.stage .combat-log-wrapper {
+  min-width: 20rem;
+}
+html body main section.stage .pokemon-wrapper h2,
+html body main section.stage .combat-log-wrapper h2 {
+  text-align: center;
+}
+html body main section.stage .pokemon-wrapper p,
+html body main section.stage .combat-log-wrapper p {
+  max-width: 20rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+html body main section.stage .pokemon-wrapper p.countdown,
+html body main section.stage .combat-log-wrapper p.countdown {
+  min-width: 20rem;
+  color: red;
+  font-size: 8rem;
+  font-family: "Bangers", system-ui;
+}
+html body main .pokemon-card {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20rem;
+  gap: 1rem;
+  padding: 0.5rem;
+  position: relative;
+}
+html body main .pokemon-card .info-element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+html body main .pokemon-card .info-element .info-wrapper-1,
+html body main .pokemon-card .info-element .info-wrapper-2 {
+  width: 100%;
+  text-align: center;
+}
+html body main .pokemon-card .info-element .info-wrapper-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+html body main .pokemon-card p,
+html body main .pokemon-card h2 {
+  margin: 0;
+}
+html body main .pokemon-card img {
+  width: 10rem;
+}
+html body main .pokemon-card .explosion-one {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+html body main .pokemon-card .explosion-two {
+  display: none;
+  top: 60px;
+  left: 20px;
+  position: absolute;
+}
+html body main .pokemon-card .stats {
+  display: flex;
+  flex-direction: column;
+}
+html body main .pokemon-card .stats h3 {
+  text-align: center;
+}
+html body main .pokemon-card .stats div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+html body main .pokemon-card button {
+  font-size: 1rem;
+}
+html body main .pokemon-card .higher {
+  color: green;
+  font-weight: bold;
+}
+html body main .pokemon-card progress {
+  width: 12rem;
+  height: 2.25rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body main .pokemon-card progress::-webkit-progress-bar {
+  background-color: #eee;
+}
+html body main .pokemon-card progress::-webkit-progress-value {
+  background-color: #00c853;
+}
+html body main .pokemon-card progress::-moz-progress-bar {
+  background-color: #00c853;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%) translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 1.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1.5s ease-in-out forwards;
+}/*# sourceMappingURL=main.css.map */
