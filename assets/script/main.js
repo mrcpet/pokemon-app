@@ -482,28 +482,6 @@ const singleAttack = (attacker, defender) => {
   });
 };
 
-// const battleFinished = (winner) => {
-//   const msg = `${capitalizeFirstLetter(winner.name)} wins the fight!`;
-//   combatMessage(msg);
-//   renderPokemon(selectedPokemons, pokemonContainers);
-//   if (winner.name === selectedPokemons[0].name) {
-//     shakeElement(pokemonContainers[0]);
-//     confetti({
-//       particleCount: 100,
-//       angle: 60,
-//       spread: 55,
-//       origin: { x: 0.3 },
-//     });
-//   } else {
-//     shakeElement(pokemonContainers[1]);
-//     confetti({
-//       particleCount: 100,
-//       angle: 120,
-//       spread: 55,
-//       origin: { x: 0.7 },
-//     });
-//   }
-// };
 const battleFinished = (winner) => {
   setTimeout(() => {
     const msg = `${capitalizeFirstLetter(winner.name)} wins the fight!`;
