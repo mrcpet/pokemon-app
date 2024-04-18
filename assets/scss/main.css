@@ -283,6 +283,11 @@ html body main section.stage .pokemon-wrapper,
 html body main section.stage .combat-log-wrapper {
   min-width: 20rem;
 }
+html body main section.stage .pokemon-wrapper section,
+html body main section.stage .combat-log-wrapper section {
+  display: flex;
+  justify-content: center;
+}
 html body main section.stage .pokemon-wrapper h2,
 html body main section.stage .combat-log-wrapper h2 {
   text-align: center;
@@ -295,7 +300,6 @@ html body main section.stage .combat-log-wrapper p {
 }
 html body main section.stage .pokemon-wrapper p.countdown,
 html body main section.stage .combat-log-wrapper p.countdown {
-  min-width: 20rem;
   color: red;
   font-size: 8rem;
   font-family: "Bangers", system-ui;
@@ -379,6 +383,17 @@ html body main .pokemon-card progress::-webkit-progress-value {
 }
 html body main .pokemon-card progress::-moz-progress-bar {
   background-color: #00c853;
+}
+html footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.5rem;
+}
+html footer a {
+  color: #333;
 }
 
 @keyframes slideInLeft {

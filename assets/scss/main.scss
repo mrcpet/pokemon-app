@@ -72,17 +72,19 @@ html {
         .pokemon-wrapper,
         .combat-log-wrapper {
           min-width: 20rem;
+          section {
+            display: flex;
+            justify-content: center;
+          }
           h2 {
             text-align: center;
           }
-
           p {
             max-width: 20rem;
             font-size: 1.25rem;
             text-align: center;
           }
           p.countdown {
-            min-width: 20rem;
             color: red;
             font-size: 8rem;
             font-family: "Bangers", system-ui;
@@ -175,6 +177,17 @@ html {
           }
         }
       }
+    }
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 0.5rem;
+    a {
+      color: #333;
     }
   }
 }

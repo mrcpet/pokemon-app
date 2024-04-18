@@ -5,7 +5,7 @@ const compareMsg = document.querySelector("#compareMsg");
 const combatLog = document.querySelector("#combatLog");
 
 // query selectors buttons
-const showPokemonBtn = document.querySelector("#showPokemonBtn");
+const addPokemonBtn = document.querySelector("#addPokemonBtn");
 const compareBtn = document.querySelector("#compareBtn");
 const startBattleBtn = document.querySelector("#startBattleBtn");
 const resetBtn = document.querySelector("#resetBtn");
@@ -417,7 +417,7 @@ const combatMessage = (string) => {
     combatLog.innerHTML = "";
   }
   const message = document.createElement("p");
-  message.textContent = string;
+  message.innerHTML = string;
   switch (string) {
     case "1":
       message.classList.add("countdown");
@@ -454,7 +454,7 @@ const singleAttack = (attacker, defender) => {
           attacker.move
         } and hits ${capitalizeFirstLetter(defender.name)} for ${Math.round(
           damage
-        )} damage! ${capitalizeFirstLetter(
+        )} damage! <br><br>${capitalizeFirstLetter(
           defender.name
         )} remaining hp: ${Math.round(defender.stats.hp)}`;
         combatMessage(msg);
@@ -576,7 +576,7 @@ const startBattle = async () => {
 };
 
 // event listeners
-showPokemonBtn.addEventListener("click", async () => {
+addPokemonBtn.addEventListener("click", async () => {
   const data = await getPokemons();
   const selectedPokemon = pokedexDropDown.value;
   const pokeObject = data.filter((pokemon) => pokemon.name === selectedPokemon);
@@ -598,8 +598,15 @@ showPokemonBtn.addEventListener("click", async () => {
         "The pokemons can't hurt themselves, they exist in a fantasy world free from the shackles of our modern society."
       );
     } else {
+      combatMessage(
+        `A wild ${capitalizeFirstLetter(createPokemon.name)} appears!`
+      );
       selectedPokemons.push(createPokemon);
     }
+  } else {
+    combatMessage(
+      "The battlefield is too crowded, remove a pokémon to add another!"
+    );
   }
   console.log("array of created pokemons", selectedPokemons);
   renderPokemon(selectedPokemons, pokemonContainers);
@@ -609,21 +616,26 @@ compareBtn.addEventListener("click", () => {
   if (selectedPokemons.length === 2) {
     let pokemonOne = selectedPokemons[0];
     let pokemonTwo = selectedPokemons[1];
-    let higherStats = selectedPokemons[1].compare(selectedPokemons[0]);
+    let higherStats = pokemonOne.compare(pokemonTwo);
+    combatLog.innerHTML = "";
+    let compareMsg;
     if (higherStats.winner === pokemonOne.name) {
-      compareMsg.textContent = `
+      compareMsg = `
         ${capitalizeFirstLetter(
           pokemonOne.name
         )} is stronger than ${capitalizeFirstLetter(pokemonTwo.name)}!`;
     } else if (higherStats.winner === pokemonTwo.name) {
-      compareMsg.textContent = `
+      compareMsg = `
         ${capitalizeFirstLetter(
           pokemonTwo.name
         )} is stronger than ${capitalizeFirstLetter(pokemonOne.name)}!`;
     } else {
-      compareMsg.textContent = "The pokémons are equal!";
+      compareMsg = "The pokémons are equal!";
     }
+    combatMessage(compareMsg);
     renderPokemon(selectedPokemons, pokemonContainers, higherStats);
+  } else {
+    combatMessage("Compare to who?");
   }
 });
 
